@@ -11,7 +11,30 @@
 <body>
  <nav>
   <div class="logo">
-   <h4> Wallpapers</h4>
+   <script language="javascript">
+    function setup(){
+    var T;
+    var x;
+   T = createElement("h4","Forest Section");
+    x = 0;
+    changeDirection = false;
+    }
+    funtion draw(){
+    T.html("Forest Section");
+    T.position(x,0);
+    if(x >390){
+    changeDirection = true;
+    }
+    else if(x<=0){
+    changeDirection = false;}
+    if (x >=0 && changeDirection == false){
+    x=x+3
+    }
+    else if(changeDirection == true){
+    x=x-3
+    }
+    }
+    </script>
   </div>
  <ul class="nav-links">
 <li>
